@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsdetail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+     >
+    <RelativeLayout 
+        android:id="@+id/newsdetail_titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_titlebar_background"
+        >
+        <Button
+            android:id="@+id/newsdetail_titlebar_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="0跟帖"
+            android:textColor="@color/white"
+            android:background="@drawable/newsdetail_titlebar_btn_comments_selector" />
+        <TextView
+            android:id="@+id/newsdetail_titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="新闻浏览"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+     </RelativeLayout>
+     
+    <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/newsdetail_titlebar_layout"
+        >
+        
+    </ScrollView> --> 
+    <TextView 
+        android:id="@+id/newsTitle"
+        android:text="新闻标题加载中。。。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark"
+        android:textSize="16dip"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@+id/newsdetail_titlebar_layout"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        />
+    
+    <TextView 
+        android:id="@+id/newsBody"
+        android:text="新闻加载中。。。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark"
+        android:textSize="15dip"
+        android:layout_below="@+id/newsTitle"
+        android:layout_marginTop="30dip"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        />
+
+
+
+    <include
+        android:id="@+id/comment_reply_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/news_reply_frame_layout" />
+
+</RelativeLayout>

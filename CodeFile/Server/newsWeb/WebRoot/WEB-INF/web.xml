@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetCategoriesServlet</servlet-name>
+    <servlet-class>com.zy.servlet.GetCategoriesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getSpecifyCategoryNews</servlet-name>
+    <servlet-class>com.zy.servlet.getSpecifyCategoryNews</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getUserInfo</servlet-name>
+    <servlet-class>com.zy.servlet.getUserInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateEmotionHistory</servlet-name>
+    <servlet-class>com.zy.servlet.UpdateEmotionHistory</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetNewsByNewsID</servlet-name>
+    <servlet-class>com.zy.servlet.GetNewsByNewsID</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetCommentServlet</servlet-name>
+    <servlet-class>com.zy.servlet.GetCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddCommentServlet</servlet-name>
+    <servlet-class>com.zy.servlet.AddCommentServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>GetCategoriesServlet</servlet-name>
+    <url-pattern>/GetCategoriesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getSpecifyCategoryNews</servlet-name>
+    <url-pattern>/getSpecifyCategoryNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getUserInfo</servlet-name>
+    <url-pattern>/getUserInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateEmotionHistory</servlet-name>
+    <url-pattern>/UpdateEmotionHistory</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetNewsByNewsID</servlet-name>
+    <url-pattern>/GetNewsByNewsID</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCommentServlet</servlet-name>
+    <url-pattern>/GetCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCommentServlet</servlet-name>
+    <url-pattern>/AddCommentServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

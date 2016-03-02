@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:baiduadsdk="http://schemas.android.com/apk/res/com.xiaowu.news"
+    android:id="@+id/loadmore_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <Button 
+        android:id="@+id/loadmore_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30.0dip"
+        android:layout_marginTop="0.0dip"
+        android:layout_centerHorizontal="true"
+        android:text="加载更多"
+        android:textSize="18.0sp"
+        android:background="@drawable/news_list_item_selector"
+        android:textColor="@color/newslist_loadmore_btn_selector"
+        />
+
+    <ProgressBar 
+        android:id="@+id/loadmore_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginRight="15.0dip"
+        android:layout_alignRight="@id/loadmore_btn"
+        android:layout_centerHorizontal="true"
+        />
+	<TextView 
+	    android:id="@+id/loadmore_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/loadmore_btn"
+	    android:layout_centerHorizontal="true"
+	    android:enabled="false"
+	    android:textSize="12.0dip"
+	    android:background="@color/white"
+	    android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    android:text="正在加载..."
+	    android:visibility="gone"
+	    />
+</RelativeLayout>

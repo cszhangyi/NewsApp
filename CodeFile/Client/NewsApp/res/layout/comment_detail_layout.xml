@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsdetail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+     >
+    <RelativeLayout 
+        android:id="@+id/newsdetail_titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_titlebar_background"
+        >
+        <TextView
+            android:id="@+id/newsdetail_titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="用户评论"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+     </RelativeLayout>
+     
+
+    
+    <TextView 
+        android:id="@+id/commentBody"
+        android:text="评论加载中。。。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark"
+        android:textSize="15dip"
+        android:layout_below="@+id/newsTitle"
+        android:layout_marginTop="60dip"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        />
+
+</RelativeLayout>

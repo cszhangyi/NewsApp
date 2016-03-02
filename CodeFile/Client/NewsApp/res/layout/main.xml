@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:background="@color/light"
+	       android:orientation="horizontal"
+	       android:padding="@dimen/base_padding" >
+	
+	       <LinearLayout
+	           android:layout_width="wrap_content"
+	           android:layout_height="match_parent"
+	           android:orientation="vertical" >
+	
+	           <de.hdodenhof.circleimageview.CircleImageView
+	               android:id="@+id/imageViewBtn"
+	               android:layout_width="80dp"
+	               android:layout_height="80dp"
+	               android:onClick="imageOnClick"
+	               android:src="@drawable/demo"
+	               app:border_color="@color/light"
+	               app:border_width="1dp" />
+	       </LinearLayout>
+	
+	       <LinearLayout
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_marginLeft="120px"
+	           android:orientation="vertical" >
+	
+	           <ImageView
+	               android:layout_width="65dp"
+	               android:layout_height="65dp"
+	               android:src="@drawable/fineweather" >
+	           </ImageView>
+	
+	           <LinearLayout
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:gravity="center"
+	               android:orientation="horizontal" >
+	
+	               <ImageView
+	                   android:layout_width="wrap_content"
+	                   android:layout_height="wrap_content"
+	                   android:src="@drawable/position" >
+	               </ImageView>
+	
+	               <TextView
+	                   android:layout_width="wrap_content"
+	                   android:layout_height="wrap_content"
+	                   android:text="长沙" >
+	               </TextView>
+	           </LinearLayout>
+	       </LinearLayout>
+	
+	       <LinearLayout
+	           android:layout_width="wrap_content"
+	           android:layout_height="match_parent"
+	           android:layout_marginLeft="120px"
+	           android:orientation="vertical" >
+	
+	           <TextView
+	               android:id="@+id/emotionText"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:text="anger: 0.00000\ncontempt: 0.00000\nhappiness: 0.00000\ndisgust: 0.00000\nsuprise: 0.00000"
+	               android:textStyle="bold" 
+	               android:textSize="50px"
+	               />
+	       </LinearLayout>
+	   </LinearLayout>
+	   
+	<!-- Title bar refresh!!!! -->   
+	<RelativeLayout
+        android:id="@+id/titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_titlebar_background" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="9.0dip"
+            android:text="@string/title_name"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/titlebar_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/btn_titlebar_refresh_selector" />
+
+        <ProgressBar
+            android:id="@+id/titlebar_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14.0dip"
+            android:layout_marginTop="10.0dip"
+            android:clickable="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+	<!-- Title bar refresh! END -->  
+	
+
+    <!--
+             <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/base_padding"
+        android:background="@color/light">
+
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_launcher" />
+        
+    </RelativeLayout>
+    -->
+
+
+    <!--
+         <RelativeLayout
+        android:id="@+id/categorybar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-16dip"
+        android:background="@drawable/image_categorybar_background" >
+        </RelativeLayout>
+    -->
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <org.yanzi.ui.HorizontalListView
+        android:id="@+id/horizon_listview"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true" >
+    </org.yanzi.ui.HorizontalListView>
+        
+    </LinearLayout>
+
+    
+
+    <ListView
+        android:id="@+id/news_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/image_list_separator_line"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/news_list_item_selector" />
+
+</LinearLayout>

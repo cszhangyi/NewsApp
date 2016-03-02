@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="title_name">基于用户情感的新闻App</string>
+    <string name="app_name">NewsApp</string>
+    <string name="loadmore_btn">加载更多</string>
+    <string name="loadmore_text">正在加载...</string>
+    
+    <string name="textview_login_name">登陆名</string>
+    <string name="textview_login_password">密码</string>
+    <string name="button_login">登陆</string>
+    <string name="button_reset">重置</string>
+
+</resources>
